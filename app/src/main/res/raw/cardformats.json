@@ -1,0 +1,13 @@
+[
+  {
+    "name": "McDonald's Arch Card",
+
+    "formatInt": 128,
+
+    "formatValue": "ITF",
+
+    "valueType": "NUMERIC",
+
+    "valueLength": 12
+  }
+]
