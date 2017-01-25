@@ -30,17 +30,14 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
-import com.google.gson.*;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Main activity demonstrating how to pass extra parameters to an activity that
@@ -234,7 +231,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     Log.d(TAG, "Barcode raw value: " + barcode.rawValue);
                     Log.d(TAG, "Barcode format: " + barcode.format);
                 } else {
-                    statusMessage.setText(R.string.barcode_failure);
                     Log.d(TAG, "No barcode captured, intent data is null");
                 }
             } else {
